@@ -8,12 +8,14 @@ body {
     height:150px;
 }
 .navbar-brand {
-    font-size: 3em;
+    font-size: 50px;
     color:green;
+    text-align: left;
 }
 form .btn {
     background-color: green;
+    color: black;
 }
 .center .btn {
-    background-color: orangered;
+    background-color: #FFB800;
 }
