@@ -1,0 +1,19 @@
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(132, 221, 90);
+}
+.navbar {
+    background-color:#FFB800;
+    height:150px;
+}
+.navbar-brand {
+    font-size: 3em;
+    color:green;
+}
+form .btn {
+    background-color: green;
+}
+.center .btn {
+    background-color: orangered;
+}
