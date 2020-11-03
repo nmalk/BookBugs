@@ -6,6 +6,9 @@ body {
 .navbar {
     background-color:#FFB800;
     height:150px;
+    border: 2px solid #FFB800;
+    border-radius: 30px;
+    margin: 5px 15px;
 }
 .navbar-brand {
     font-size: 50px;
