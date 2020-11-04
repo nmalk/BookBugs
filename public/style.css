@@ -2,6 +2,7 @@
 body {
     box-sizing: border-box;
     background-color: rgb(132, 221, 90);
+    margin: 0;
 }
 .navbar {
     background-color:#FFB800;
@@ -19,6 +20,22 @@ form .btn {
     background-color: green;
     color: black;
 }
+.center {
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(144, 169, 85, 0.7);
+    height: 450px;
+    border-radius: 10px;
+}
 .center .btn {
     background-color: #FFB800;
+    margin-left: 14%;
+    margin-top: 15%;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 50%;
 }
