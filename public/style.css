@@ -1,4 +1,7 @@
 
+:root{
+    --inner: 20px;
+}
 body {
     box-sizing: border-box;
     background-color: rgb(132, 221, 90);
@@ -6,15 +9,17 @@ body {
 }
 .navbar {
     background-color:#FFB800;
-    height:150px;
+    height:125px;
     border: 2px solid #FFB800;
     border-radius: 30px;
     margin: 5px 15px;
+    padding: var(--inner);
 }
 .navbar-brand {
     font-size: 50px;
     color:green;
     text-align: left;
+    padding-top: .0125rem;
 }
 form .btn {
     background-color: green;
@@ -22,20 +27,35 @@ form .btn {
 }
 .center {
     /* border: 1px solid black; */
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgba(144, 169, 85, 0.7);
-    height: 450px;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* background-color: rgba(144, 169, 85, 0.7); */
+    background-image: url("../public/images/image1.jpg");
+    /* background-position: center; */
+    background-size: 100% 100%;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    height: 500px;
+    /* width: auto; */
     border-radius: 10px;
 }
 .center .btn {
     background-color: #FFB800;
-    margin-left: 14%;
-    margin-top: 15%;
-    padding: 20px;
+    margin-left: 11%;
+    margin-top: 23%;
+    /* padding: 20px; */
     width: 150px;
     height: 100px;
     font-weight: 700;
     font-size: 20px;
     border-radius: 50%;
+    border: none;
+}
+footer {
+    background-color: #FFB800;
+    border: 1 px solid grey;
+    height: 100px;
+    border-radius: 30px;
+    margin: 10px 15px;
+    text-align: center;
 }
