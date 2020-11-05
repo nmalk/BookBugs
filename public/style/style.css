@@ -1,7 +1,7 @@
 
-:root{
+/* :root{
     --inner: 20px;
-}
+} */
 body {
     box-sizing: border-box;
     background-color: rgb(132, 221, 90);
@@ -13,7 +13,7 @@ body {
     border: 2px solid #FFB800;
     border-radius: 30px;
     margin: 5px 15px;
-    padding: var(--inner);
+    /* padding: var(--inner); */
 }
 .navbar-brand {
     font-size: 50px;
@@ -23,33 +23,49 @@ body {
 }
 form .btn {
     background-color: green;
-    color: black;
+    color: white;
 }
 .center {
     /* border: 1px solid black; */
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 60%;
+    margin: 0 auto;
     /* background-color: rgba(144, 169, 85, 0.7); */
-    background-image: url("../images/image1.jpg");
-    /* background-position: center; */
-    background-size: 100% 100%;
-    /* position: relative; */
-    background-repeat: no-repeat;
+    background: center/cover no-repeat url("../images/image1.jpg");
     height: 500px;
-    /* width: auto; */
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .center .btn {
     background-color: #FFB800;
-    margin-left: 11%;
-    margin-top: 23%;
+    /* margin-left: 11%;
+    margin-top: 23%; */
     /* padding: 20px; */
+
     width: 150px;
     height: 100px;
     font-weight: 700;
     font-size: 20px;
     border-radius: 50%;
     border: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.background {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card {
+    width: 20%;
+    background: center/cover url(../images/butterflies.jpg);
+    
 }
 footer {
     background-color: #FFB800;
@@ -58,4 +74,10 @@ footer {
     border-radius: 30px;
     margin: 10px 15px;
     text-align: center;
+}
+.form-inline .avatar {
+    margin-right: 5rem;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;    
 }
