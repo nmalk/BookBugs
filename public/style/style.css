@@ -4,15 +4,22 @@
 } */
 body {
     box-sizing: border-box;
-    background-color: rgb(132, 221, 90);
     margin: 0;
+    background-image: center/cover no-repeat url(../images/newimage1.png);
+    background-color: rgb(132, 221, 90);
+}
+.title {
+    width: 100%;
+    margin-top: 1rem;
+    height: 250px;
+    background-color:#FFB800;
+    border-radius: 30px;
 }
 .navbar {
-    background-color:#FFB800;
-    height:125px;
+    height: 100px;
     border: 2px solid #FFB800;
-    border-radius: 30px;
-    margin: 5px 15px;
+    /* border-radius: 30px; */
+    margin: 15px;
     /* padding: var(--inner); */
 }
 .navbar-brand {
@@ -20,6 +27,9 @@ body {
     color:green;
     text-align: left;
     padding-top: .0125rem;
+}
+.aside {
+    border: 1px solid black;
 }
 #login, #signup {
     width: 100%;
@@ -33,7 +43,7 @@ body {
 }
 .card-body {
     height: 100%;
-    background-color: rgb(176, 216, 207);
+    /* background-color: rgb(176, 216, 207); */
 }
 /* form {
     display:flex;
@@ -45,12 +55,11 @@ form .btn {
     color: white;
 }
 .center {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 60%;
     margin: 0 auto;
-    background-color: rgba(144, 169, 85, 0.7);
-    background: center/cover no-repeat url("../images/image1.jpg");
-    height: 500px;
+    background-color: rgba(144, 169, 85, 0.8);
+    height: 375px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
