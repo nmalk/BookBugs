@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-c=scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>New Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+    <style>
+        * {
+            /* Backround Color */
+            --default: #C7C7C7;
+            --primary: #12438A;
+            /* #0f4574; */
+            --success: #40A659;
+            --info: #65AAF6;
+            --warning: #EAC85C;
+            --danger: #9C311A;
+            --invert: #222222;
+            /* Border Color 
+    -----------------------------------------------------*/
+            --bdr-default: solid #686868;
+            --bdr-primary: solid #003162;
+            --bdr-success: solid #0B7124;
+            --bdr-info: solid #044995;
+            --bdr-warning: solid #735100;
+            --bdr-danger: solid #780D00;
+            /* Buttons 
+    -----------------------------------------------------*/
+            --btn-default: linear-gradient(#eeeeee, #888888);
+            --btn-primary: linear-gradient(#5780C1, #244D8E);
+            --btn-success: linear-gradient(#74BE6B, #558B4F);
+            --btn-info: linear-gradient(#9CEDFF, #7FCDEF);
+            --btn-warning: linear-gradient(#F3BA34, #d39925);
+            --btn-danger: linear-gradient(#D75F44, #BA4227);
+            /* On :hover colors 
+    -----------------------------------------------------*/
+            --hvr-default: linear-gradient(#888888, #eeeeee);
+            --hvr-primary: linear-gradient(#00316c, #044995);
+            --hvr-success: linear-gradient(#558B4F, #74BE6B);
+            --hvr-info: linear-gradient( #7FCDEF, #9CEDFF);
+            --hvr-warning: linear-gradient(#d39925, #F3BA34);
+            --hvr-danger: linear-gradient(#BA4227, #D75F44);
+            /* More Colors 
+    -----------------------------------------------------*/
+            --post-bg: #fffbd8;
+            --link-color: #3674bb;
+            --white: #fff;
+        }
+        
+        section,
+        div {
+            margin: 0 auto !important;
+        }
+        
+        div.side {
+            --bdr-style: solid var(--color, #3693);
+            border: 1px var(--bdr-style);
+            background: var(--color, #2469);
+            margin: 0 auto;
+        }
+        
+        div.side:nth-child(1) {
+            transform: perspective(250px) rotateX(150deg);
+            width: 305px;
+            position: relative;
+            top: 71px;
+            z-index: -2;
+        }
+        
+        div.side:nth-child(2) {
+            transform: perspective(200px) rotateX(30deg);
+            width: 350px;
+            position: relative;
+            bottom: -4px;
+            z-index: 1;
+        }
+        
+        div.side:nth-child(3) {
+            transform: perspective(200px) rotateX(-30deg);
+            width: 350px;
+            z-index: 1;
+        }
+        
+        div.side:nth-child(4) {
+            transform: perspective(250px) rotateX(-1230deg);
+            width: 305px;
+            position: relative;
+            bottom: 68px;
+            z-index: -2;
+        }
+        
+        ul {
+            display: flex;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        ul > li {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            display: flex;
+            --arg: 5px;
+            border-radius: var(--arg);
+            outline: 0;
+            padding: var(--arg, 3px) var(--arg);
+        }
+        
+        input:nth-child(1) {
+            width: 250px;
+            align-self: center;
+            z-index: -1;
+        }
+        
+        input:nth-child(2) {
+            width: 400px !important;
+            align-self: center;
+            z-index: 1;
+        }
+        
+        input:nth-child(3) {
+            width: 400px;
+            align-self: center;
+            z-index: 1;
+        }
+        
+        input:nth-child(4) {
+            width: 250px;
+            align-self: center;
+            z-index: -1;
+        }
+        
+        section > div > .btn {
+            display: flex;
+            border: none;
+            border-radius: var(--arg, 5px);
+            outline: 0 !important;
+            cursor: pointer;
+            margin: -50px auto !important;
+        }
+        
+        .btn-block {
+            padding: 10px;
+            width: 325px;
+        }
+        
+        [type] > .center {
+            margin: 0 auto;
+        }
+        
+        .btn-primary {
+            background: var(--btn-primary);
+            color: #ddd;
+        }
+        
+        .btn-primary:hover {
+            background: var(--hvr-primary);
+        }
+        
+        span.center {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="side">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Username" onFocus="this.placeholder = '';" onBlur="if(this.placeholder == '') {this.placeholder = 'Username'};">
+                    <label for=""></label>
+                </li>
+            </ul>
+        </div>
+        <div class="side">
+            <ul>
+                <li>
+                    <input class="center" type="email" placeholder="username@yourmail.com" onFocus="this.placeholder = '';" onBlur="if(this.placeholder == '') {this.placeholder = 'username@yourmail.com'};">
+                    <label for=""></label>
+                </li>
+            </ul>
+        </div>
+        <div class="side">
+            <ul>
+                <li>
+                    <input type="password" placeholder="Password" onFocus="this.placeholder = '';" onBlur="if(this.placeholder == '') {this.placeholder = 'Password'};" max="20" required>
+                    <label for=""></label>
+                </li>
+            </ul>
+        </div>
+        <div class="side">
+            <ul>
+                <li>
+                    <input type="password" placeholder="Password" onFocus="this.placeholder = '';" onBlur="if(this.placeholder == '') {this.placeholder = 'Password'};" max="20" required>
+                    <label for=""></label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn btn-block btn-primary" type="submit"><span class="center">Submit</span></button>
+        </div>
+    </section>
+    <!--JavaScript
+------------------------>
+    <script src=""></script>
+</body>
+
+</html>
